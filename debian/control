@@ -1,0 +1,14 @@
+Source: qubes-mgmt-salt-all-theme
+Section: admin
+Priority: extra
+Maintainer: Jason Mehring <nrgaway@gmail.com>
+Build-Depends: debhelper (>= 9~), quilt
+Standards-Version: 3.9.5
+Homepage: http://www.qubes-os.org
+
+Package: qubes-mgmt-salt-all-theme
+Section: admin
+Architecture: all
+Depends: qubes-mgmt-salt-base, qubes-mgmt-salt-config
+Description: Fine tunes graphics rendering to render fonts more like Ubuntu.
+  Installs Source-Code-Pro and Ubuntu fonts.

@@ -1,7 +1,13 @@
 #!yamlscript
+# -*- coding: utf-8 -*-
+# vim: set syntax=yaml ts=2 sw=2 sts=2 et :
 
 ##
-# fonts-ubuntu
+# theme.fonts-ubuntu
+# ==================
+#
+# Execute:
+#   qubesctl state.sls theme.fonts-ubuntu
 ##
 
 $with /usr/share/fonts/ubuntu-font-family:

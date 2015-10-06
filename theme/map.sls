@@ -1,4 +1,6 @@
 #!pyobjects
+# -*- coding: utf-8 -*-
+# vim: set syntax=python ts=4 sw=4 sts=4 et :
 
 class ThemeMap(Map):
     class Debian:

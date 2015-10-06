@@ -1,7 +1,13 @@
 #!yamlscript
+# -*- coding: utf-8 -*-
+# vim: set syntax=yaml ts=2 sw=2 sts=2 et :
 
 ##
-# fonts-source-code-pro
+# theme.fonts-source-code-pro
+# ===========================
+#
+# Execute:
+#   qubesctl state.sls theme.fonts-source-code-pro
 ##
 
 $with /usr/share/fonts/source-code-pro:

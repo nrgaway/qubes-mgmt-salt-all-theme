@@ -1,9 +1,15 @@
 #!jinja|yamlscript
+# -*- coding: utf-8 -*-
+# vim: set syntax=yaml ts=2 sw=2 sts=2 et :
 
 ##
 # theme
+# =====
 #
 # use 'xrdb -query' to check rendering results
+#
+# Execute:
+#   qubesctl state.sls theme
 ##
 
 $python: |

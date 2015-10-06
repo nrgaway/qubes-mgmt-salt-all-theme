@@ -1,0 +1,20 @@
+# vim: set syntax=yaml ts=2 sw=2 sts=2 et :
+
+name:          theme-formula
+top_level_dir: theme
+saltenv:       all
+version:       3.0.0
+release:       1
+os:            RedHat, Debian, Ubuntu, Suse, FreeBSD
+os_family:     RedHat, Debian, Suse, FreeBSD
+summary:       Fine tunes graphics rendering to render fonts more like Ubuntu.
+description: | 
+  Fine tunes graphics rendering to render fonts more like Ubuntu.
+  Installs Source-Code-Pro and Ubuntu fonts.
+
+state-tops:
+  all:
+    enable:
+      - theme
+      - theme.fonts_ubuntu
+      - theme.fonts_source_code_pro

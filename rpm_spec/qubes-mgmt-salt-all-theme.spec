@@ -51,6 +51,7 @@ qubesctl top.enable %{state_name}.fonts_source_code_pro saltenv=all -l quiet --o
 
 %files
 %defattr(-,root,root)
+%doc LICENSE README.rst
 %attr(750, root, root) %dir /srv/formulas/all/theme-formula
 
 /srv/formulas/all/theme-formula/LICENSE

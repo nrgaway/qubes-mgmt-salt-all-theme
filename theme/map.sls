@@ -21,7 +21,8 @@ class ThemeMap(Map):
 
     class RedHat:
         xdg_qubes_settings = '/etc/X11/xinit/Xclients.d/25xdg-qubes-settings'
-        theme_dependencies = [ 'freetype-freeworld', 
+        theme_rpmfusion_dependencies = [ 'freetype-freeworld' ]
+        theme_dependencies = [ 'ttmkfdir', 
                                'gnome-tweak-tool', 
                                'dconf-editor', 
                                'xdg-user-dirs', 

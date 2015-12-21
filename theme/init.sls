@@ -21,12 +21,22 @@ $python: |
 #
 # Rebuild Debian font cache after installing fonts:
 # fc-cache -fv  rebuilds cached list of fonts fc-cache -fv  rebuilds cached list of fonts 
+#
+# Install rpmfusion repos on Fedora if they do not yet exist
+
+{% if grains['os_family'] == 'RedHat' %}
+theme_rpmfusion_dependencies:
+  pkg.installed:
+    - names: $ThemeMap.theme_rpmfusion_dependencies
+    - fromrepo: rpmfusion-free
+{% endif %}
 
 $with theme-dependencies:
   pkg.installed:
     - names: $ThemeMap.theme_dependencies
     {% if grains['os_family'] == 'RedHat' %}
-    - fromrepo: rpmfusion-free
+    - require:
+      pkg: theme_rpmfusion_dependencies
     {% endif %}
 
   gsettings set org.gnome.settings-daemon.plugins.xsettings hinting slight:

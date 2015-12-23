@@ -10,6 +10,12 @@ URL:	   http://www.qubes-os.org/
 Group:     System administration tools
 BuildArch: noarch
 Requires:  qubes-mgmt-salt
+Requires:  ttmkfdir 
+Requires:  gnome-tweak-tool
+Requires:  dconf-editor
+Requires:  xdg-user-dirs
+Requires:  gnome-themes-standard
+Requires:  xsettingsd
 
 %define _builddir %(pwd)
 
